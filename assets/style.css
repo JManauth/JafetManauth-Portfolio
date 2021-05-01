@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 400px;
+    width: auto;
+    background-image: url("./images/newyork.jpg");
+    border: 5px solid red;
+}
+
+h1{
+    color:blue;
+}
+
+Aside{
+    width: 25%;
+    height: 500px;
+}
