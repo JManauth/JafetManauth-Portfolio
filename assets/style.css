@@ -6,7 +6,7 @@ header{
     height: 400px;
     width: auto;
     background-image: url("./images/newyork.jpg");
-    border: 5px solid red;
+    border: 2px solid red;
 }
 
 h1{
@@ -16,4 +16,17 @@ h1{
 Aside{
     width: 25%;
     height: 500px;
+    float: left;
+    border: 2px solid red;
+}
+.projects{
+    width:75%;
+    float: right;
+    border: 2px solid red;
+}
+footer{
+    border: 2px solid red;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
