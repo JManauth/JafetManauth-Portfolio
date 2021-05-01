@@ -12,6 +12,8 @@ header{
     height: 400px;
     width: auto;
     background-image: url("../images/newyork.jpg");
+    background-size: cover;
+    background-position: 0% 15%;
     border: 2px solid red;
     position: relative;
 }
