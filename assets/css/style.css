@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    background-color: lightslategrey;
+}
+/*Header*/
+header{
+    height: 400px;
+    width: auto;
+    background-image: url("../images/newyork.jpg");
+    border: 2px solid red;
+    position: relative;
+}
+header h1{
+    position: absolute;
+    bottom: 0;
+    font-size: 150px;
+    color: whitesmoke;
+}
+header ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header li{
+    display: inline;
+    color: whitesmoke;
+    font-size: 40px;
+    margin-left: 40px;
+}
+/*aside*/
+aside{
+    width: 20%;
+    height: 1000px;
+    background-color:gray;
+    float: left;
+    margin: 50px 0 50px 50px;
+    border: 2px solid red;
+}
+aside h1{
+    text-align: center;
+    font-size: 40px;
+    color: peachpuff;
+}
+/*projects*/
+.projects{
+    height: 1000px;
+    width:70%;
+    margin: 50px 50px 50px 0;
+    background-color: bisque;
+    float: right;
+    border: 2px solid red;
+}
+.projects h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+/*contact*/
+.contact{
+    border: 2px solid red;
+    height: 200px;
+    width: auto;
+    margin: 0 50px 50px 50px;
+    background-color: teal;
+    clear: both;
+    position: static;
+}
+.contact h1{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.contact ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact li{
+    display: inline;
+}
