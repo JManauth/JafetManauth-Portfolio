@@ -27,6 +27,7 @@ header h1{
     border-bottom: var(--borderBig);
     margin-left: 20px;
     margin-top: 20px;
+    padding-right: 15px;
 }
 .skyline{
     height: 600px;
@@ -51,6 +52,7 @@ nav li{
     font-size: 40px;
     margin-left: 40px;
     margin-right: 25px;
+    padding-right: 15px;
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
 }
@@ -74,6 +76,7 @@ aside{
 aside h1{
     float: left;
     font-size: 40px;
+    padding-right: 15px;
     color: var(--mainColor);
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
@@ -104,6 +107,7 @@ aside h1{
     border-right: var(--borderSmall);
     border-bottom: var(--borderSmall);
     margin-bottom: 25px;
+    padding-right: 15px;
 }
 .projects #smallBox img{
     height: 100%;
@@ -188,6 +192,7 @@ aside h1{
     width: fit-content;
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
+    padding-right: 15px;
 }
 .contact ul{
     float: right;
