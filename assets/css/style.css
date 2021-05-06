@@ -62,7 +62,11 @@ aside h1{
     margin-bottom: 75px;
     background-color: bisque;
     border: 2px solid red;
-    position: relative;
+    
+}
+.flexBoxes{
+    height: 95%;
+    min-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -71,8 +75,11 @@ aside h1{
     float:left;
     font-size: 40px;
     color: white;
-    width: 100%;
+    width: auto;
     height: 5%;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 25px;
 }
 .projects #bigBox img{
    
