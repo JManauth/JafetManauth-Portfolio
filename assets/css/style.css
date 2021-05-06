@@ -74,16 +74,46 @@ aside h1{
     width: 100%;
     height: 5%;
 }
-
+.projects #bigBox img{
+   
+}
+.projects #smallBox img{
+    height: 100%;
+    width: 100%;
+}
 #bigBox{
     border: 2px solid purple;
     height: 45%;
     width: 93.333%;
+    background-image: url(../images/laptop.jfif);
+    background-position: center;
+    background-size: cover;
 }
 #smallBox{
     border: 2px solid blue;
     height: 20%;
     width: 45%;
+   
+}
+.project2{
+    background-image: url(../images/hotdogs.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.project3{
+    background-image: url(../images/lambo.jfif);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+.project4{
+    background-image: url(../images/mcafe.jfif);
+    background-size: cover;
+    background-position: 0% 75%;
+}
+.project5{
+    background-image: url(../images/model.jfif);
+    background-size: cover;
+    background-position: 0 75%;
 }
 /*contact*/
 .contact{
