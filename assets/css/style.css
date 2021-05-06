@@ -2,37 +2,55 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --mainColor: lightblue;
+    --borderBig: 10px solid white;
+    --borderSmall: 5px solid white;
+}
 body{
     position: relative;
     min-height: 100%;
-    background-color: lightslategrey;
+    background-color: #161018;
 }
 /*Header*/
 header{
-    height: 400px;
-    width: auto;
-    background-image: url("../images/newyork.jpg");
-    background-size: cover;
-    background-position: 0% 15%;
-    border: 2px solid red;
-    position: relative;
+    height: 150px;
+    background-color: #161018;
 }
 header h1{
-    position: absolute;
-    bottom: 0;
-    font-size: 150px;
-    color: whitesmoke;
+    font-size: 75px;
+    width: fit-content;
+    color: var(--mainColor);
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig);
+    margin-left: 20px;
+    margin-top: 20px;
 }
-header ul{
-    position: absolute;
-    top: 0;
-    right: 0;
+.skyline{
+    height: 600px;
+    width: 100%;
+    background-image: url("../images/skyline4.jfif");
+    background-size:cover;
+    background-position: 0% 30%;
+    border-bottom: var(--borderBig)
 }
-header li{
+
+nav{
+    width: 100%;
+    height: 75px;
+    margin-top: 25px;
+    border-bottom: var(--borderBig);
+    text-align: center;
+}
+nav li{
     display: inline;
-    color: whitesmoke;
+    
+    color: var(--mainColor);
     font-size: 40px;
     margin-left: 40px;
+    margin-right: 25px;
+    border-bottom: var(--borderSmall);
+    border-right: var(--borderSmall);
 }
 .main{
     display: flex;
@@ -45,14 +63,18 @@ aside{
     height: 1000px;
     margin-top: 75px;
     margin-bottom: 75px;
-    background-color:gray;
-    border: 2px solid red;
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig);
     display: inline-block;
+    color: var(--mainColor);
+    
 }
 aside h1{
     float: left;
     font-size: 40px;
-    color: peachpuff;
+    color: var(--mainColor);
+    border-bottom: var(--borderSmall);
+    border-right: var(--borderSmall);
 }
 /*projects*/
 .projects{
@@ -60,9 +82,8 @@ aside h1{
     min-width: 70%;
     margin-top: 75px;
     margin-bottom: 75px;
-    background-color: bisque;
-    border: 2px solid red;
-    
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig);
 }
 .flexBoxes{
     height: 95%;
@@ -74,33 +95,31 @@ aside h1{
 .projects h1{
     float:left;
     font-size: 40px;
-    color: white;
+    color: var(--mainColor);
     width: auto;
     height: 5%;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
+    border-right: var(--borderSmall);
+    border-bottom: var(--borderSmall);
     margin-bottom: 25px;
-}
-.projects #bigBox img{
-   
 }
 .projects #smallBox img{
     height: 100%;
     width: 100%;
 }
 #bigBox{
-    border: 2px solid purple;
     height: 45%;
     width: 93.333%;
     background-image: url(../images/laptop.jfif);
     background-position: center;
     background-size: cover;
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig);
 }
 #smallBox{
-    border: 2px solid blue;
     height: 20%;
     width: 45%;
-   
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig);
 }
 .project2{
     background-image: url(../images/hotdogs.jfif);
@@ -124,14 +143,18 @@ aside h1{
 }
 /*contact*/
 .contact{
-    border: 2px solid red;
     height: 200px;
     min-width: 95%;
-    background-color: teal;
+    border-right: var(--borderBig);
+    border-bottom: var(--borderBig); 
+    margin-bottom: 75px;
 }
 .contact h1{
-    color: whitesmoke;
-    font-size: 30px;
+    color: var(--mainColor);
+    font-size: 40px;
+    width: fit-content;
+    border-bottom: var(--borderSmall);
+    border-right: var(--borderSmall);
 }
 .contact ul{
     float: right;
@@ -139,4 +162,5 @@ aside h1{
 }
 .contact li{
     display: inline;
+    color: var(--mainColor);
 }
