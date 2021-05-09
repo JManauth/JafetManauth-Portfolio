@@ -47,7 +47,6 @@ nav{
 }
 nav li{
     display: inline;
-    
     color: var(--mainColor);
     font-size: 40px;
     margin-left: 40px;
@@ -82,6 +81,7 @@ aside h1{
     width: fit-content;
     font-size: 40px;
     padding-right: 15px;
+    margin-right: 20px;
     color: var(--mainColor);
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
@@ -94,6 +94,7 @@ aside img{
 aside p{
     margin-top: 20px;
     line-height: 1.5;
+    margin-right: 20px;
 }
 
 
@@ -118,16 +119,12 @@ aside p{
     font-size: 40px;
     color: var(--mainColor);
     width: auto;
-    height: 5%;
     border-right: var(--borderSmall);
     border-bottom: var(--borderSmall);
     margin-bottom: 25px;
     padding-right: 15px;
 }
-.projects #smallBox img{
-    height: 100%;
-    width: 100%;
-}
+
 #bigBox{
     height: 45%;
     width: 93.333%;
@@ -201,12 +198,12 @@ aside p{
 }
 /*contact*/
 .contact{
-    height: fit-content;
+    height: auto;
     min-width: 95%;
     border-right: var(--borderBig);
     border-bottom: var(--borderBig); 
     margin-bottom: 75px;
-    position: relative;
+    position: relative;  
 }
 .contact h1{
     color: var(--mainColor);
@@ -215,7 +212,7 @@ aside p{
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
     padding-right: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 175px;
 }
 .contact ul{
     position: absolute;
@@ -228,5 +225,70 @@ aside p{
     border-right: var(--borderSmall);
     font-size: 30px;
     padding-right: 10px;
-    margin-right: 140px;   
+    margin-right: 140px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 960px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;  
+    }
+    aside{
+        min-width: 80%;
+        max-width: 80%;
+    }
+    .projects{
+        min-width: 80%;
+        max-width: 80%;
+        height: 2000px;
+    }
+    #bigBox{
+        height: 300px;
+        width: 93.333%;
+    }
+    #smallBox{
+        height: 300px;
+        width: 93.333%;
+    }
+    .contact{
+        min-width: 80%;
+        height: fit-content;
+        display: block;
+    }
+    .contact ul{
+        width: 100%;
+    }
+    .contact li{
+        font-size: 25px;
+        margin: 10px;
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contact h1{
+        margin-bottom: 275px;
+    }
+    .projects h1{
+        padding-bottom: 0;
+    }
+    header h1{
+        font-size: 50px;
+        border-bottom: var(--borderSmall);
+        border-right: var(--borderSmall);
+    }
+    nav{
+        height: fit-content;
+        
+    }
+    nav li{
+        display: block;
+        font-size: 30px;
+        margin-bottom: 20px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
