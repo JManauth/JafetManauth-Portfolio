@@ -56,6 +56,10 @@ nav li{
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
 }
+a{
+    color: var(--mainColor);
+    text-decoration: none;
+}
 .main{
     display: flex;
     flex-wrap: wrap;
@@ -64,23 +68,34 @@ nav li{
 /*aside*/
 aside{
     max-width: 20%;
-    height: 1000px;
+    height: fit-content;
     margin-top: 75px;
     margin-bottom: 75px;
     border-right: var(--borderBig);
     border-bottom: var(--borderBig);
-    display: inline-block;
     color: var(--mainColor);
-    
+    display: flex;
+    flex-direction: column; 
 }
 aside h1{
     float: left;
+    width: fit-content;
     font-size: 40px;
     padding-right: 15px;
     color: var(--mainColor);
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
+    position: relative;
 }
+aside img{
+    margin-top: 50px;
+    padding-right: 50px;
+}
+aside p{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
 
 /*projects*/
 .projects{
@@ -116,9 +131,11 @@ aside h1{
 #bigBox{
     height: 45%;
     width: 93.333%;
-    background-image: url(../images/laptop.jfif);
+    /*
+    background-image: url(../images/cheesypuffs2.PNG);
     background-position: center;
     background-size: cover;
+    */
     border-right: var(--borderBig);
     border-bottom: var(--borderBig);
     position: relative;
@@ -178,13 +195,18 @@ aside h1{
     background-size: cover;
     background-position: 0 75%;
 }
+.projects img{
+    width: 100%;
+    height: 100%;
+}
 /*contact*/
 .contact{
-    height: 200px;
+    height: fit-content;
     min-width: 95%;
     border-right: var(--borderBig);
     border-bottom: var(--borderBig); 
     margin-bottom: 75px;
+    position: relative;
 }
 .contact h1{
     color: var(--mainColor);
@@ -193,12 +215,18 @@ aside h1{
     border-bottom: var(--borderSmall);
     border-right: var(--borderSmall);
     padding-right: 15px;
+    margin-bottom: 150px;
 }
 .contact ul{
-    float: right;
-    
+    position: absolute;
+    bottom: 30px;
 }
 .contact li{
-    display: inline;
+    display: inline-block;
     color: var(--mainColor);
+    border-bottom: var(--borderSmall);
+    border-right: var(--borderSmall);
+    font-size: 30px;
+    padding-right: 10px;
+    margin-right: 140px;   
 }
