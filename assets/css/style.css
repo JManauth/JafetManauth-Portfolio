@@ -7,6 +7,7 @@
     --bgcolor: #161018;
     --borderBig: 10px solid white;
     --borderSmall: 5px solid white;
+    --hoverBorder: 5px solid lightblue;
     --white: white;
 }
 body{
@@ -124,15 +125,12 @@ aside p{
     margin-bottom: 25px;
     padding-right: 15px;
 }
-
+#bigBox:hover, #smallBox:hover{
+    opacity: 0.25;
+}
 #bigBox{
     height: 45%;
     width: 93.333%;
-    /*
-    background-image: url(../images/cheesypuffs2.PNG);
-    background-position: center;
-    background-size: cover;
-    */
     border-right: var(--borderBig);
     border-bottom: var(--borderBig);
     position: relative;
@@ -287,6 +285,7 @@ aside p{
         display: block;
         font-size: 30px;
         margin-bottom: 20px;
+        margin-right: 10px;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
