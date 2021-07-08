@@ -102,7 +102,7 @@ aside p{
 /*projects*/
 .projects{
     height: 1000px;
-    min-width: 70%;
+    max-width: 70%;
     margin-top: 75px;
     margin-bottom: 75px;
     border-right: var(--borderBig);
@@ -114,6 +114,9 @@ aside p{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+}
+.projects ul {
+    margin-left: 20px;
 }
 .projects h1{
     float:left;
